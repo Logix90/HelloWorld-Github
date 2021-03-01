@@ -25,6 +25,8 @@ namespace HelloWorld_Github
             InitializeComponent();
         }
 
+        int number = 0;
+
         private void btnHelloWorld_Click(object sender, RoutedEventArgs e)
         {
             if (number == 0)

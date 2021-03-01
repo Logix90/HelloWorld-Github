@@ -23,10 +23,7 @@ namespace HelloWorld_Github
         public MainWindow()
         {
             InitializeComponent();
-            
         }
-
-        int number = 0;
 
         private void btnHelloWorld_Click(object sender, RoutedEventArgs e)
         {
@@ -42,8 +39,7 @@ namespace HelloWorld_Github
             {
                 txtResult.Text = "three times is the limit !!!";
             }
-           //zegfezgezgezg
-          // gesgesg
+           
             number++;
             lblNumber.Content = number;
         }

@@ -23,11 +23,33 @@ namespace HelloWorld_Github
         public MainWindow()
         {
             InitializeComponent();
+            
         }
+
+        int number = 0;
 
         private void btnHelloWorld_Click(object sender, RoutedEventArgs e)
         {
-            txtResult.Text = "Hello World";
+            if (number == 0)
+            {
+                txtResult.Text = "Hello World";
+            }
+            else if (number == 1)
+            {
+                txtResult.Text = "Don't push twice!!!!!!!";
+            }
+            else if (number == 2)
+            {
+                txtResult.Text = "three times is the limit !!!";
+            }
+           
+            number++;
+            lblNumber.Content = number;
+        }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            lblNumber.Content = number;
         }
     }
 }
